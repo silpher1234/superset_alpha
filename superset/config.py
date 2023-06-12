@@ -268,10 +268,10 @@ SCHEDULED_QUERIES: dict[str, Any] = {}
 # GLOBALS FOR APP Builder
 # ------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "Superset"
+APP_NAME = "Pragyan"
 
 # Specify the App icon
-APP_ICON = "/static/assets/images/superset-logo-horiz.png"
+APP_ICON = "/static/assets/images/snowflake.png"
 
 # Specify where clicking the logo would take the user
 # e.g. setting it to '/' would take the user to '/superset/welcome/'
@@ -336,6 +336,7 @@ BABEL_DEFAULT_FOLDER = "superset/translations"
 LANGUAGES = {
     "en": {"flag": "us", "name": "English"},
     "es": {"flag": "es", "name": "Spanish"},
+    "in": {"flag": "in", "name": "Indian"},
     "it": {"flag": "it", "name": "Italian"},
     "fr": {"flag": "fr", "name": "French"},
     "zh": {"flag": "cn", "name": "Chinese"},
