@@ -336,7 +336,6 @@ BABEL_DEFAULT_FOLDER = "superset/translations"
 LANGUAGES = {
     "en": {"flag": "us", "name": "English"},
     "es": {"flag": "es", "name": "Spanish"},
-    "in": {"flag": "in", "name": "Indian"},
     "it": {"flag": "it", "name": "Italian"},
     "fr": {"flag": "fr", "name": "French"},
     "zh": {"flag": "cn", "name": "Chinese"},
@@ -371,12 +370,7 @@ class D3Format(TypedDict, total=False):
     currency: list[str]
 
 
-D3_FORMAT: D3Format = {
-    decimal: '.',
-    thousands: ',',
-    grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-    currency: ['₹', ''],
-}
+D3_FORMAT: D3Format = {}
 
 # ---------------------------------------------------
 # Feature flags
