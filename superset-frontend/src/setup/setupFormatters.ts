@@ -18,6 +18,7 @@
  */
 import {
   createDurationFormatter,
+  createD3NumberFormatter,
   getNumberFormatter,
   getNumberFormatterRegistry,
   NumberFormats,
@@ -70,7 +71,19 @@ export default function setupFormatters(
     .registerValue(
       'DURATION_SUB',
       createDurationFormatter({ formatSubMilliseconds: true }),
-    );
+    )
+    .registerValue(
+        'CURRENCY_INDIA',
+        createD3NumberFormatter({
+          locale: {
+            decimal: '.',
+            thousands: ',',
+            grouping: [3, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            currency: ['₹', ''],
+          },
+          formatString: '$,d',
+        }),
+      );
 
   getTimeFormatterRegistry()
     .registerValue('smart_date', smartDateFormatter)
