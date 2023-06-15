@@ -98,7 +98,7 @@ PACKAGE_JSON_FILE = pkg_resources.resource_filename(
 #     "type": "image/png"
 #     "rel": "icon"
 # },
-FAVICONS = [{"href": "/static/assets/images/favicon.png"}]
+FAVICONS = [{"href": "/static/assets/images/netezza.png"}]
 
 
 def _try_json_readversion(filepath: str) -> str | None:
@@ -1391,7 +1391,7 @@ STATIC_ASSETS_PREFIX = ""
 
 # Some sqlalchemy connection strings can open Superset to security risks.
 # Typically these should not be allowed.
-PREVENT_UNSAFE_DB_CONNECTIONS = True
+PREVENT_UNSAFE_DB_CONNECTIONS = False
 
 # Prevents unsafe default endpoints to be registered on datasets.
 PREVENT_UNSAFE_DEFAULT_URLS_ON_DATASET = True
